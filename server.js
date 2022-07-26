@@ -48,7 +48,7 @@ async function handleDownload(req, res) {
   }
   file.downloadCount++;
   await file.save();
-  console.log(file.downloadCount);
+  //console.log(file.downloadCount);
 
   res.download(file.path, file.originalName);
 }
